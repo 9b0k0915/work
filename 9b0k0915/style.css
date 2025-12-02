@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 中央主 LOGO */
+.main-logo img {
+    width: 100%;
+    max-width: 658px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.main-logo img:hover {
+    transform: scale(1.05);
+    opacity: 0.5;
+    filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.7));
+}
+
+/* 裝飾圖共同設定 */
+.decor {
+    position: absolute;
+    pointer-events: none;
+}
+
+/* 左下 */
+.bottom-left {
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    max-width: 300px;
+}
+
+/* 右上 */
+.top-right {
+    top: 0;
+    right: 0;
+    width: 25%;
+    max-width: 320px;
+}
+
+/* 右下小logo */
+.bottom-right {
+    bottom: 5px;
+    right: 5px;
+    width: 80px;
+    opacity: 0.8;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>BRAND</title>
+    <link rel="stylesheet" href="brand.css">
+</head>
+<body>
+
+<div class="brand-section">
+
+    <!-- ACCESSORIES -->
+    <div class="category">
+        <h1>ACCESSORIES</h1>
+        <div class="item">山骸紀</div>
+        <div class="item">Bronze Souls</div>
+        <div class="item">NL</div>
+        <div class="item">Thesixthbasement</div>
+    </div>
+
+    <!-- KOL -->
+    <div class="category">
+        <h1>KOL</h1>
+        <div class="item">AMCHI</div>
+        <div class="item">HSUAN</div>
+        <div class="item">SECALLENYANG</div>
+        <div class="item">XIN</div>
+    </div>
+
+    <!-- APPAREL -->
+    <div class="category">
+        <h1>APPAREL</h1>
+        <div class="item">GOOPI</div>
+        <div class="item">MURR</div>
+        <div class="item">4 PERCENT</div>
+        <div class="item">NAMESAKE</div>
+    </div>
+
+</div>
+
+<script>
+document.querySelectorAll(".category").forEach(category => {
+
+    category.addEventListener("mouseenter", () => {
+        const items = category.querySelectorAll(".item");
+
+        items.forEach((item, index) => {
+            setTimeout(() => {
+                item.classList.add("show");
+            }, index * 120);
+        });
+    });
+
+    category.addEventListener("mouseleave", () => {
+        const items = category.querySelectorAll(".item");
+        items.forEach(item => {
+            item.classList.remove("show");
+        });
+    });
+
+});
+</script>
+	<a href="home.html" class="back-logo">
+    <img src="images/logo-small.png" alt="back logo">
+</a>
+
+</body>
+</html>
